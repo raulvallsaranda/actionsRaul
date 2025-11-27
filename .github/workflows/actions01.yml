@@ -8,8 +8,8 @@ jobs:
       contents: write
       
     steps:
-      - name: Comprova el codi del repositori
-        uses: actions/checkout@v5
+      - name: Checkout del codi del repositori
+        uses: actions/checkout@v6
         
       - name: Llistat de fitxers del repositori
         run: |
