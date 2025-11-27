@@ -3,17 +3,24 @@ on: [push]
 jobs:
   Prova-Github-Actions:
     runs-on: ubuntu-latest
+    
     permissions:
       contents: write
-    steps:     
+      
+    steps:
+      - name: Comprova el codi del repositori
+        uses: actions/checkout@v5
+        
       - name: Llistat de fitxers del repositori
         run: |
           ls -la
+          
       - name: Modificat fitxer.txt
         run: |
           echo "Executat "`date` >> fitxer.txt
           echo "Mostrar contingut de fitxer.txt:\n"
           cat fitxer.txt
+          
       - name: commit i push
         run: |
           git config --global user.name "${{ github.actor }}"
