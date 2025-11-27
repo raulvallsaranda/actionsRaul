@@ -1,2 +1,1 @@
-Contingut inicial
-Modificació fitxer.txt
+Reinici fitxer
