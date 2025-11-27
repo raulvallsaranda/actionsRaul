@@ -1,3 +1,4 @@
 Reinici fitxer
 Modificació fitxer.txt
 Executat Thu Nov 27 17:35:12 UTC 2025
+Afegida línia a fitxer.txt
